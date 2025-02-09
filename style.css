@@ -1,0 +1,22 @@
+body 
+{ text-align: center; 
+    font-family: Arial, sans-serif; 
+    background-color: azure;
+}
+.container
+ { width: 250px; 
+    margin: auto; 
+    padding: 20px; 
+    border: 1px solid #ccc;
+    background-color: aliceblue;
+ }
+input, button {
+     width: 90%;
+      padding: 10px; 
+     margin: 5px 0;
+     }
+button {
+     background-color: rgb(22, 168, 226);
+      color: white;
+       border: none;
+        cursor: pointer; }
