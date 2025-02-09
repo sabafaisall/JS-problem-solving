@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Withdrawal</title>
+    <link href="./style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <h3>ATM Withdrawal</h3>
+        <input type="number" id="amount" placeholder="Enter Amount">
+        <input type="password" id="pin" placeholder="Enter PIN">
+        <button onclick="atmWithdrawal()">Withdraw</button>
+        <p id="message"></p>
+    </div>
+    <br>
+
+    <div class="container">
+        <h3>Shopping Discount</h3>
+        <input type="number" id="orderAmount1" placeholder="Enter Order Amount">
+        <button onclick="calculateFinalAmount()">Calculate</button>
+        <p id="message1"></p>
+    </div>
+    <div class="container">
+        <h2>Student Grading System</h2>
+        <input type="number" id="marks" placeholder="Enter Marks">
+        <input type="number" id="attendance" placeholder="Enter Attendance %">
+        <button onclick="calculateGrade()">Get Grade</button>
+        <div class="result" id="gradeResult"></div>
+    </div>
+    <div class="container">
+        <h2>Smart Traffic Light System</h2>
+        <select id="trafficDensity">
+            <option value="Heavy Traffic">Heavy Traffic</option>
+            <option value="Moderate Traffic">Moderate Traffic</option>
+            <option value="Light Traffic">Light Traffic</option>
+        </select>
+        <button onclick="trafficLightControl()">Check Green Light Duration</button>
+        <div class="result" id="trafficResult"></div>
+    </div>
+    <div class="container">
+        <h2>Movie Ticket Pricing</h2>
+        <input type="number" id="age" placeholder="Enter Age">
+        <input type="time" id="showTime">
+        <button onclick="calculateTicketPrice()">Calculate Ticket Price</button>
+        <div class="result" id="ticketResult"></div>
+    </div>
+    <div class="container">
+        <h2>Job Application Filter</h2>
+        <input type="number" id="jobAge" placeholder="Enter Age">
+        <input type="number" id="experience" placeholder="Enter Experience (Years)">
+        <input type="text" id="qualification" placeholder="Enter Qualification">
+        <button onclick="isEligibleForJob()">Check Eligibility</button>
+        <div class="result" id="jobResult"></div>
+    </div>
+    <div class="container">
+        <h2>E-commerce Coupon Redemption</h2>
+        <input type="number" id="orderAmountCoupon" placeholder="Enter Order Amount">
+        <select id="couponCode">
+            <option value="">No Coupon</option>
+            <option value="DISCOUNT10">DISCOUNT10</option>
+            <option value="FREESHIP">FREESHIP</option>
+        </select>
+        <button onclick="applyCoupon()">Apply Coupon</button>
+        <div class="result" id="couponResult"></div>
+    </div>
+    <div class="container">
+        <h2>Fitness Membership Plan</h2>
+        <select id="planType">
+            <option value="Basic">Basic ($20/month)</option>
+            <option value="Premium">Premium ($50/month)</option>
+            <option value="VIP">VIP ($80/month)</option>
+        </select>
+        <input type="checkbox" id="wantsTrainer"> Personal Trainer
+        <input type="checkbox" id="wantsDietPlan"> Diet Plan
+        <button onclick="choosePlan()">Choose Best Plan</button>
+        <div class="result" id="membershipResult"></div>
+    </div>
+    
+    <div class="container">
+        <h2>Electricity Bill Calculation</h2>
+        <input type="number" id="units" placeholder="Enter Units Consumed">
+        <select id="timeOfDay">
+            <option value="normal">Normal Hours (8 AM - 8 PM)</option>
+            <option value="peak">Peak Hours (8 PM - 8 AM)</option>
+        </select>
+        <button onclick="calculateElectricityBill()">Calculate Bill</button>
+        <div class="result" id="billResult"></div>
+    </div>
+    <div class="container">
+        <h2>Flight Ticket Booking</h2>
+        <select id="classType">
+            <option value="Economy">Economy</option>
+            <option value="Business">Business (+$200)</option>
+            <option value="First">First Class (+$500)</option>
+        </select>
+        <input type="number" id="luggageWeight" placeholder="Enter Luggage Weight (kg)">
+        <input type="checkbox" id="isStudent"> Student Discount (15%)
+        <input type="checkbox" id="isSenior"> Senior Discount (10%)
+        <button onclick="calculateFlightFare()">Calculate Fare</button>
+        <div class="result" id="flightResult"></div>
+    </div>
+
+    </body>
+    <script src="./script.js"></script>
